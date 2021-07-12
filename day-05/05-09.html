@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 300px;
+            height: 400px;
+            margin: 30px;
+            border: 2px solid #f00;
+            position: relative;
+        }
+        .label{
+            /* width: 50px;
+            height: 25px; */
+            background-color: #f00;
+            padding: 10px 20px;
+            position: absolute;
+            top: 10px;
+            left: -10px;
+        }
+        .label::after{
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 0;
+            height: 0;
+            border-left: 9px solid transparent;
+            border-top: 10px solid #f00;
+        }
+        .flag{
+            background-color: #00f;
+            padding: 20px 10px;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        .flag::after{
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-top: 20px solid #00f;
+            border-right: 20px solid #00f;
+            border-bottom: 20px solid transparent;
+            border-bottom:20px solid #00f ;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="label">1234</div>
+        <div class="flag">0987</div>
+        <img src="https://picsum.photos/300/200/?random=1">
+        <div class="txt">
+            <h2>title</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus incidunt quaerat </p>
+        </div>
+    </div>
+</body>
+</html>
