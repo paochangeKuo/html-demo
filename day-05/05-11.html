@@ -6,33 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .pic{
+            background-color: #0f0;
+            position: relative;
+            line-height: 20px;
+        }
+        /* .pic::after{
+            content: '';
+            height: 50px;
+            width: 100%;
+            position: absolute;
+            background-color: #f0f;
+            background-image: linear-gradient(0deg, #f00, #ff0);
+        } */
+        span{
+            vertical-align: top;
+        }
+        .pic img{
+            /* display: block; */
+            /* vertical-align: middle; */
+        }
         .box{
             width: 300px;
-            padding: 10px;
             border: 1px solid #f00;
         }
-        .box .img{
-            position: relative;
-        }
-        .color{
-            width: 300px;
-            height: 100px;
-            background-image: linear-gradient(0deg, #080, #0f08 );
-            position: absolute;
-            top: 100px;
-        }
         .txt{
-            background-color: #080;
+            background-color: #f00;
+            padding: 10px;
+            color: #fff;
         }
     </style>
 </head>
 <body>
     
     <div class="box">
-        <img src="https://picsum.photos/300/200/?random=1">
-        <div class="color"></div>
+        <div class="pic">Lorem <span>1214</span>
+            <img src="301-300x200.jpeg">
+        </div>
         <div class="txt">
-            <h2>title</h2>
+            <h3>title</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, quaerat.</p>
         </div>
     </div>
