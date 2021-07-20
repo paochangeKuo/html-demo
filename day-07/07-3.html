@@ -6,20 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .container{
+        .item{
             border: 1px solid #f00;
             margin: 10px;
+            padding: 10px;
         }
-        .container img{
-            vertical-align: middle;
-            align-items: center;
+        .item img{
+            width: 100%;
         }
-        @media screen and (min-width: 1200px) {
-            .container{
+        @media screen and (min-width: 768px) {
+            .item{
                 display: flex;
             }
-            .box{
+            .item:nth-child(even){
+                flex-direction: row-reverse;
+            }
+            .pic{
                 width: 50%;
+            }
+            .txt{
+                width: 50%;
+                box-sizing: border-box;
+                margin-left: 10px;
             }
         }
     </style>
@@ -28,27 +36,29 @@
     
 
     <div class="group">
-        <div class="container">
-                <img src="https://picsum.photos/300/200/?random=1">
-            <section class="box">
+        <div class="item">
+            <div class="pic">
+                    <img src="https://picsum.photos/300/200/?random=1">
+            </div>
+            <section class="txt">
                 <h3>title</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus porro corporis saepe aut quibusdam deserunt eveniet labore voluptatem eligendi, incidunt temporibus eum debitis ullam adipisci deleniti optio autem tempora nisi!</p>
             </section>
         </div>
-        <div class="container">
-            <div class="img">
-                <img src="https://picsum.photos/300/200/?random=1">
+        <div class="item">
+            <div class="pic">
+                    <img src="https://picsum.photos/300/200/?random=1">
             </div>
-            <section class="box">
+            <section class="txt">
                 <h3>title</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus porro corporis saepe aut quibusdam deserunt eveniet labore voluptatem eligendi, incidunt temporibus eum debitis ullam adipisci deleniti optio autem tempora nisi!</p>
             </section>
         </div>
-        <div class="container">
-            <div class="img">
-                <img src="https://picsum.photos/300/200/?random=1">
+        <div class="item">
+            <div class="pic">
+                    <img src="https://picsum.photos/300/200/?random=1">
             </div>
-            <section class="box">
+            <section class="txt">
                 <h3>title</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus porro corporis saepe aut quibusdam deserunt eveniet labore voluptatem eligendi, incidunt temporibus eum debitis ullam adipisci deleniti optio autem tempora nisi!</p>
             </section>
