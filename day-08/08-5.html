@@ -7,22 +7,55 @@
     <title>Document</title>
     <link rel="stylesheet" href="grid.css">
     <style>
-        
+        .group {
+            text-align: center;
+            border: 1px solid red;
+        }
+        .container{
+            border: 1px solid green;
+        }
+        .container .row .col-12{
+            border: 1px solid #f0a;
+        }
+        .item{
+            text-align: center;
+            border: 1px solid blue;
+        }
+      .item img{
+          width: 100%;
+      }  
         
     </style>
 </head>
 <body>
-    <div class="cainter">
-        <div class="row">
-            <div class="col-1">
-                <h3></h3>
-                <p></p>
-            </div>
-            <div class="col-4">
-                <div class="pic">
-                    <img src="https://picsum.photos/300/200/?random=1">
+    <div class="group">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-12">
+                    <h2>不只停留在釣魚</h2>
+                    <p>不藏私的教學</p>
                 </div>
-                <div class="txt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae, ad.</div>
+                <div class="col-12 col-md-4">
+                    <div class="item">
+                        <img src="https://fakeimg.pl/300x200/color">
+                        <h3>title</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta, deleniti?</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="item">
+                        <img src="https://fakeimg.pl/300x200/color">
+                        <h3>title</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta, deleniti?</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="item">
+                        <img src="https://fakeimg.pl/300x200/color">
+                        <h3>title</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta, deleniti?</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

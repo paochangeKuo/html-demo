@@ -17,7 +17,7 @@
     margin-right: clac(var(--gridGap) * -1);
 }
 [class*="col-"],
-[class*="row-cols-"]{
+[class*="cols"] > *{
     /* --gridGap: 15px; */
     box-sizing: border-box;
     padding-left: var(--gridGap);
@@ -82,7 +82,7 @@
     .col-xl-11{width: 91.666666%;}
     .col-xl-12{width: 100%;}
 }
-/* ----------------------------------- */
+/* ----------------------------------------------- */
 .row-cols-1 > *{width: 100%;}
 .row-cols-2 > *{width: 50%;}
 .row-cols-3 > *{width: 33.333333%;}

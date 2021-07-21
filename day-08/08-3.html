@@ -9,10 +9,21 @@
         .container{
             max-width: 1200px;
             margin: auto;
+            padding-left: 15px;
+            padding-right: 15px;
+            /* border: 1px solid   red; */
+        }
+        [class*="cols"] > *{
+            box-sizing: border-box;
+            padding-left: 15px;
+            padding-right: 15px;
         }
         .row{
             display: flex;
             flex-wrap: wrap;
+            margin-left: -15px;
+            margin-right: -15px;
+            /* border: 1px solid  blue; */
         }
         .row-cols-1 > *{width: 100%;}
         .row-cols-2 > *{width: 50%;}
@@ -55,15 +66,11 @@
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro, dolor nihil illum itaque mollitia inventore esse similique sequi odit fuga ullam obcaecati explicabo tempore delectus beatae. Animi velit voluptates dicta?</p>
             </div>
         </div>
-    </div>
-    <div class="row row-cols-3">
         <div class="col">
             <div class="item">
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro, dolor nihil illum itaque mollitia inventore esse similique sequi odit fuga ullam obcaecati explicabo tempore delectus beatae. Animi velit voluptates dicta?</p>
             </div>
         </div>
-    </div>
-    <div class="row row-cols-3">
         <div class="col">
             <div class="item">
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro, dolor nihil illum itaque mollitia inventore esse similique sequi odit fuga ullam obcaecati explicabo tempore delectus beatae. Animi velit voluptates dicta?</p>
